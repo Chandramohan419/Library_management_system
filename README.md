@@ -28,11 +28,13 @@ library_management/
 │   ├── book.py
 │   ├── member.py
 │   └── library.py
+│   └── transaction.py
+│   └── init.py
 │
 ├── main.py
 ├── README.md
 └── requirements.txt
-Classes Used
+# Classes Used
 Book
 Represents a library book.
 
@@ -42,29 +44,28 @@ Book ID
 Title
 Author
 Availability Status
+
 Example:
-
 Book(1, "Clean Code", "Robert Martin")
-Member
+
+# Member
 Represents a library member.
-
 Attributes:
-
 Member ID
 Member Name
 Borrowed Books
 Example:
-
 Member(101, "Sneha")
-Library
-Responsible for:
 
+# Library
+Responsible for:
 Adding books
 Registering members
 Borrowing books
 Returning books
 Displaying library inventory
-Workflow
+
+# Workflow
 Add Books
     ↓
 Register Members
@@ -76,7 +77,8 @@ Update Availability
 Return Books
     ↓
 Display Status
-Sample Usage
+
+# Sample Usage
 library = Library()
 
 library.add_book(Book(1, "Clean Code", "Robert Martin"))
@@ -93,7 +95,7 @@ library.show_books()
 library.return_book(1, 101)
 
 library.show_books()
-Sample Output
+# Sample Output
 Book added successfully
 Member registered successfully
 
@@ -109,19 +111,22 @@ Book returned successfully
 Available Books:
 Book ID: 1 | Clean Code | Available
 Book ID: 2 | Python Crash Course | Borrowed
-OOP Concepts Demonstrated
-Encapsulation
+# OOP Concepts Demonstrated
+Encapsulation:
 Book data is stored within Book objects.
 Member information is stored within Member objects.
-Composition
+
+Composition:
 Library contains collections of Books and Members.
-Abstraction
+
+Abstraction:
 Library methods hide implementation details from users.
 Object-Oriented Design
 Library
  ├── Books
  └── Members
-Key Learning Outcomes
+ 
+# Key Learning Outcomes
 Python Classes and Objects
 Data Structures (Lists and Dictionaries)
 Object-Oriented Programming
@@ -129,26 +134,25 @@ Method Design
 Modular Programming
 Real-World System Modeling
 Future Enhancements
-Version 2
+# Version 2
 Book Search Functionality
 ISBN Support
 Borrowing Due Dates
 Late Return Tracking
-Version 3
+# Version 3
 SQLite Database Integration
 User Authentication
 Admin Dashboard
 Reservation System
-Version 4
+# Version 4
 REST APIs using FastAPI
 Docker Deployment
 Email Notifications
 Web-Based Interface
-Technologies Used
+# Technologies Used
 Python 3.x
 Object-Oriented Programming (OOP)
 Standard Python Libraries
-Author
+# Author
 Chandramohan Pokuru
-
 Library Management System built using Python and Object-Oriented Programming principles.
